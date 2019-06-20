@@ -215,8 +215,17 @@ img {
   color: #212529;
   text-decoration: none;
 }
+.main-navigation .nav-container .displayVertical {
+  background: lightcoral;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+}
 .footer {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
@@ -225,6 +234,17 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.footer form label {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.footer form input {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.footer .big-font {
+  font-size: 3rem;
 }
 .home .intro {
   padding: 90px 0 10px;
@@ -349,4 +369,73 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .content-pick .destination .custom-btn {
+  background: crimson;
+  color: white;
+}
+.home .content-pick:last-child {
+  height: 300px;
+  border: 0.2rem solid black;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick:last-child .box-container {
+  padding: 2rem;
+  width: 20rem;
+  height: 20rem;
+  border: 0.5rem solid gold;
+}
+.home .content-pick:last-child .box {
+  padding: 1rem;
+  color: white;
+  background: crimson;
+  width: 10rem;
+  height: 10rem;
+}
+.page-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 10rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.page-modal .content {
+  display: flex;
+  justify-content: center;
+  background: white;
+  color: crimson;
+  padding: 2rem;
+  border: 0.1rem solid black;
+  margin: auto;
+  width: 80%;
+}
+.page-modal footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background: crimson;
+  width: 80%;
+  margin: auto;
+}
+.page-modal footer button {
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  background: whitesmoke;
+  border: 0.1rem solid transparent;
 }

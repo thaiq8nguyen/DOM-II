@@ -109,6 +109,71 @@
       .btn {
         .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
       }
+
+      .custom-btn {
+        background: crimson;
+        color: white;
+      }
     }
   }
+  .content-pick:last-child {
+    height: 300px;
+    border: 0.2rem solid black;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    .box-container {
+      padding: 2rem;
+      width: 20rem;
+      height: 20rem;
+      border: 0.5rem solid gold;
+    }
+    .box {
+      padding: 1rem;
+      color: white;
+      background: crimson;
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  
 }// home
+.page-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10rem;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  .content {
+    display: flex;
+    justify-content: center;
+    background: white;
+    color: crimson;
+    padding: 2rem;
+    border: 0.1rem solid black;
+    margin: auto;
+    width: 80%;
+  }
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    background: crimson;
+    width: 80%;
+    margin: auto;
+    button{
+      padding: 1rem 1.5rem;
+      font-size: 1.8rem;
+      background: whitesmoke;
+      border: 0.1rem solid transparent;
+      
+    }
+  }
+}
